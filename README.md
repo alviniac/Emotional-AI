@@ -7,7 +7,7 @@ According to many deep learning experts, in practice, models are rarely trained 
 Unfortunately, since VGG-16 and VGG-19 models have too many parameters, training would be too expensive, so I opted for creating my own CNN architectures for this problem.<p>
 <a href = "https://github.com/alviniac/Emotional-AI/blob/master/trying%20different%20models.ipynb">“trying different models.ipynb”</a> –<p>
 In this notebook I design my own CNN architectures for the problem.  I went with this standard CNN architecture as noted in this url (http://cs231n.github.io/convolutional-networks/#architectures):<br><center>
-INPUT -> [[CONV -> RELU]*N -> POOL?]*M -> [FC -> RELU]*K -> FC<br></center>
+INPUT -> [[CONV -> RELU]*N -> POOL?]*M -> [FC -> RELU]*K -> FC<p></center>
 Here are some things I found improved the performance of my model:<br>
 •	Stacking two CONV - RELU layers before pooling layers instead of just one<br>
 •	Increasing number of filters as we get deeper into the network<br>
